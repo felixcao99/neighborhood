@@ -1,6 +1,6 @@
-function beepBoop(str) {
+function beepBoop(nam, str) {
   if (str.indexOf("3") >= 0) {
-    return "Won't you be my neighbor?";
+    return "Won't you be my neighbor, " + nam + "?";
   }
   if (str.indexOf("2") >= 0) {
     return "Boop!";
@@ -15,6 +15,7 @@ function beepBoop(str) {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
+    const userName = $("input#name").val();
     const numStr = $("input#number").val();
     const num = parseInt(numStr);
 
@@ -23,7 +24,7 @@ $(document).ready(function() {
     $("p#s1").text(numStr);
 
     for (let i = 0; i <= num; i++) {
-      $("ul#s2").append("<li>" + beepBoop(i.toString()) + "</li>");
+      $("ul#s2").append("<li>" + beepBoop(userName, i.toString()) + "</li>");
     }
 
   });
