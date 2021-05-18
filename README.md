@@ -26,18 +26,23 @@ The priority is 3>2>1.
 ## Specification
 Describe: beepBoop()
 Test: "It should return a string "0" if number 0 is inputted."
-Code: beepBoop("0");
+Code: beepBoop("Felix", "0");
 Expected Output: "0"
 
 Describe: beepBoop()
 Test: "It should return a string "Beep!" if number 1 is inputted."
-Code: beepBoop("1");
+Code: beepBoop("Felix", "1");
 Expected Output: "Beep!"
 
 Describe: beepBoop()
 Test: "It should return a string "Boop!" if number 2 is inputted."
-Code: beepBoop("2");
+Code: beepBoop("Felix", "2");
 Expected Output: "Boop!"
+
+Describe: beepBoop()
+Test: "It should return a string "Boop!" if number 3 and a name is inputted."
+Code: beepBoop("Felix", "3");
+Expected Output: "Won't you be my neighbor, Felix?"
 
 ## License ##
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
