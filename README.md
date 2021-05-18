@@ -54,6 +54,10 @@ Test: "It should return a string "Won't you be my neighbor, *name*?" if number 1
 Code: beepBoop("Felix", "13");
 Expected Output: "Won't you be my neighbor, Felix?"
 
+Describe: beepBoop()
+Test: "It should return a string "Won't you be my neighbor, *name*?" if number 32 and a name is inputted."
+Code: beepBoop("Felix", "32");
+Expected Output: "Won't you be my neighbor, Felix?"
 
 ## License ##
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
