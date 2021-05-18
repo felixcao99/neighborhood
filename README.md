@@ -34,6 +34,10 @@ Test: "It should return a string "Beep!" if number 1 is inputted."
 Code: beepBoop("1");
 Expected Output: "Beep!"
 
+Describe: beepBoop()
+Test: "It should return a string "Boop!" if number 2 is inputted."
+Code: beepBoop("2");
+Expected Output: "Boop!"
 
 ## License ##
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
