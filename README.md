@@ -29,6 +29,11 @@ Test: "It should return a string "0" if number 0 is inputted."
 Code: beepBoop("0");
 Expected Output: "0"
 
+Describe: beepBoop()
+Test: "It should return a string "Beep!" if number 1 is inputted."
+Code: beepBoop("1");
+Expected Output: "Beep!"
+
 
 ## License ##
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
