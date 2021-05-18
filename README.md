@@ -21,7 +21,7 @@ The priority is 3>2>1.
 * Clone this repository to your desktop.
 * Navigate to the top level of the directory
 * Open _index.html_ in your browser
-* Or use the project webpage [https://felixcao99.github.io/lang-suggestor/](https://felixcao99.github.io/lang-suggestor/)
+* Or use the project webpage [https://felixcao99.github.io/neighborhood/](https://felixcao99.github.io/neighborhood/)
 
 ## Specification
 Describe: beepBoop()
