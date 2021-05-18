@@ -19,12 +19,19 @@ $(document).ready(function() {
     const numStr = $("input#number").val();
     const num = parseInt(numStr);
 
+
     $("#formOne").hide();
     $("#story").show();
     $("p#s1").text(numStr);
 
-    for (let i = 0; i <= num; i++) {
-      $("ul#s2").append("<li>" + beepBoop(userName, i.toString()) + "</li>");
+    if($("input#reversed")[0].checked) {
+      for (let i = num; i >= 0; i--) {
+        $("ul#s2").append("<li>" + beepBoop(userName, i.toString()) + "</li>");
+      }
+    } else {
+      for (let i = 0; i <= num; i++) {
+        $("ul#s2").append("<li>" + beepBoop(userName, i.toString()) + "</li>");
+      }
     }
 
   });
